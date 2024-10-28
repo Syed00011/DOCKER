@@ -1,0 +1,16 @@
+version: '3.0'
+services:
+  barista-service:
+    build: ./barista/
+    ports:
+      - 11:80
+
+  health-service:
+    build: ./health/
+    ports:
+      - 12:80
+
+  finance-service:
+   build: ./fin
+   ports:
+     - 13:80
